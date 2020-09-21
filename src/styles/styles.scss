@@ -28,3 +28,42 @@ html, body {
         min-width: 768px;
 }
 }
+
+
+//Header 
+header { 
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    .inner-header { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        .logo { 
+            a{ 
+                font-weight: 700;
+                text-decoration: none;
+                letter-spacing: 1.5px;
+                color: $black;
+            }
+        }
+        .navigation { 
+            nav { 
+                a { 
+                    margin: 0 20px;
+                    text-decoration: None;
+                    letter-spacing: 1.75;
+                    text-transform: uppercase;
+                    font-size: 0.75;
+                    color: $black; 
+                    &:last-child { 
+                        margin-right: 0px; 
+                    }
+                }
+            }
+        }
+    }
+}
