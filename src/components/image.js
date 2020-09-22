@@ -20,7 +20,7 @@ const Image = () => {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
-          }
+          } 
         }
       }
     }
