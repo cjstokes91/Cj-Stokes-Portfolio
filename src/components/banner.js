@@ -1,32 +1,58 @@
 import React from 'react'
-// import { useStaticQuery, graphql } from 'gatsby'
-// import Img from 'gatsby-image'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Banner = () => {
-    //     const data = useStaticQuery(graphql`
-    //     query {
-    //       placeholderImage: file(relativePath: { eq: "solo.png" }) {
-    //         childImageSharp {
-    //           fluid(maxWidth: 300) {
-    //             ...GatsbyImageSharpFluid
-    //           } 
-    //         }
-    //       }
-    //     }
-    //   `)
-    // console.log(data);
+    const data = useStaticQuery(graphql`
+        query {
+          logo: file(relativePath: { eq: "logo.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              } 
+            }
+          }
+          cuties: file(relativePath: { eq: "cuties.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              } 
+            }
+          }
+          solo: file(relativePath: { eq: "solo.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              } 
+            }
+          }
+        }
+      `)
+    console.log(data);
     return (
         <div className="banner">
             <div className='container'>
                 <div className="row">
+                    <div className='side-image left'>
+                        <Img fluid={data.cuties.childImageSharp.fluid} />
+                    </div>
                     <div className='main-text'>CJ STOKES</div>
-                    {/* <div className='main-image'>
-                        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                    </div> */}
+                    <div className='main-image'>
+                        <Img fluid={data.logo.childImageSharp.fluid} />
+                    </div>
+                    <div className='side-image right'>
+                        <Img fluid={data.solo.childImageSharp.fluid} />
+                    </div>
                 </div>
+                <div className='scroll'>
+                    <span>Scroll Down</span>
+                </div>
+            </div>
+            <div className='fixed'>
+                Software Developer
             </div>
         </div>
     )
 }
 
-export default Banner;
+export default Banner; 
