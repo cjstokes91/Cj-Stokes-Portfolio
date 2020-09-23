@@ -96,6 +96,13 @@ header {
                 letter-spacing: 36px;
             }
         }
+        .main-image { 
+            width: 536px;
+            margin: o auto;
+            @media (max-width: 1440px) {
+                width: 436px;
+            }
+        }
     }
 
 }
