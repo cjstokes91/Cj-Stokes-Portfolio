@@ -27,15 +27,25 @@ const AboutBlurb = () => {
     <div className="about-blurb">
       <div className='container'>
         <div className="inner-blurb">
-        </div>
-        <div className="content">
-          <h3>Ability to build</h3>
-          <p> I am a full stack developer from Los Angeles with a passion for creating projects that are rooted in bringing equality to all. When i am not programming , you can find me usually surfing , exercising or researching a new technology.</p>
-          <div className="btn-row">
-            <Link to="/work">View Work</Link>
+          <div className="content">
+            <h3>Ability to build</h3>
+            <p> I am a full stack developer from Los Angeles with a passion for creating projects that are rooted in bringing equality to all. When i am not programming , you can find me usually surfing , exercising or researching a new technology.</p>
+            <div className="btn-row">
+              <Link to="/work">View Work</Link>
+            </div>
+          </div>
+          <div className="images">
+            <div className="top-right">
+              <Img fluid={data.darla.childImageSharp.fluid} />
+            </div>
+            <div className="bottom-left">
+              <Img fluid={data.jeep.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
-        <div className="row">
+        <div className="black-box">
+        </div>
+        <div className="black-box overlay">
         </div>
       </div>
     </div>
