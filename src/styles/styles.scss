@@ -226,8 +226,8 @@ header {
     }
     .black-box {
       background: $black;
-      height: 418px;
-      width: 836px;
+      height: 236px;
+      width: 686px;
       position: absolute;
       right: 0;
       top: 50%;
@@ -238,7 +238,7 @@ header {
       }
       &.overlay {
         z-index: 7;
-        background: $maroon;
+        background: #708090;
         mix-blend-mode: overlay;
       }
     }
