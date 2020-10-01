@@ -33,9 +33,9 @@ const Banner = () => {
     <div className="banner">
       <div className='container'>
         <div className="row">
-          <div className='side-image left'>
+          {/* <div className='side-image left'>
             <Img fluid={data.cuties.childImageSharp.fluid} />
-          </div>
+          </div> */}
           <div className='main-text'>CJ STOKES</div>
           <div className='main-image'>
             <Img fluid={data.skullLogo.childImageSharp.fluid} />

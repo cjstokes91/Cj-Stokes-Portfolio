@@ -1,17 +1,18 @@
 import React from "react"
+// import Img from "gatsby-image"
+// import Link from "gatsby"
+// import { useStaticQuery, graphql } from 'gatsby'
 
 const Contact = () => {
     return (
-        <>
+        <div>
             <h1>
-                Hello World
-        </h1>
-            <p>
-                This is the contact page and this is where i will put all my contact info.
-        </p>
-        </>
-    )
+                contact page
+            </h1>
 
+        </div>
+    )
 }
+
 
 export default Contact;

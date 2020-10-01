@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 
+
 const About = () => {
   const data = useStaticQuery(graphql`
         query {
@@ -23,6 +24,7 @@ const About = () => {
         }
       `)
   console.log(data);
+
   return (
     <div className="about">
       <div className='container'>
