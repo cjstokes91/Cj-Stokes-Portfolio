@@ -44,15 +44,17 @@ const Work = () => {
                 <div className="top-right">
                     <Img fluid={data.bar.childImageSharp.fluid} />
                 </div>
-                <div className="bottom-left">
+                <div className="image2">
+                    <div className="top-left">
+                        <Img fluid={data.fridgeDoor.childImageSharp.fluid} />
+                    </div>
+                </div>
+                {/* <div className="bottom-left">
                     <Img fluid={data.turtles.childImageSharp.fluid} />
                 </div>
                 <div className="bottom-right">
                     <Img fluid={data.fridgeDoor.childImageSharp.fluid} />
-                </div>
-                <div className="top-left">
-                    <Img fluid={data.foodivity.childImageSharp.fluid} />
-                </div>
+                </div> */}
             </div>
         </>
     )
