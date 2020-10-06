@@ -465,7 +465,7 @@ header {
       // @include centerVH;
       right: 500px;
       &:hover .card__visual {
-          background: url("https://images.unsplash.com/photo-1501504413881-5888acd06076?ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80") no-repeat;
+          background: url("https://images.unsplash.com/photos/aKFthTNgdEI") no-repeat;
           @include bgConfig;
       }
       &__visual {
@@ -550,7 +550,7 @@ header {
               &:not(:last-child) {
                   margin-right: .2rem;
               }
-          }
       }
+    }
   }
    
