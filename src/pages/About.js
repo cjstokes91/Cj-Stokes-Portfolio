@@ -33,9 +33,12 @@ const About = () => {
             <h3>Who I am</h3>
             <p> I am a full stack developer from Los Angeles with a passion for creating projects that are rooted in bringing equality to all. When i am not programming , you can find me usually surfing , exercising or researching a new technology.</p>
             <div className="btn-row-top">
-              <Link to="/work">View Work</Link>
+              <Link to="/Work">View Work</Link>
               <div>
-                <Link to="/">Return to main page</Link>
+                <Link to="/Contact">Contact Me</Link>
+                <div>
+                  <Link to="/">Return to main page</Link>
+                </div>
               </div>
             </div>
             <div className="btn-row-bottom">

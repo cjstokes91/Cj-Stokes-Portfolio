@@ -414,10 +414,10 @@ header {
     padding: 0;
   }
   
-  .app {
-    background-color: tomato;
-    height: 100vh;
-  }
+  // .app {
+  //   background-color: #fff;
+  //   height: 100vh;
+  // }
   
   body {
       font-family: "Montserrat", sans-serif;
@@ -457,7 +457,7 @@ header {
       width: 23rem;
       border-radius: 8px;
       overflow: hidden;
-      width: 25%;
+      width: 75%;
       height: 500px;
       position: relative;
       left: 70%;
@@ -465,19 +465,20 @@ header {
       // @include centerVH;
       right: 500px;
       &:hover .card__visual {
-          background: url("https://images.unsplash.com/photos/aKFthTNgdEI") no-repeat;
+          background: url("https://images.unsplash.com/photo-1498750398774-8a1191e2ea2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat;
           @include bgConfig;
       }
       &__visual {
           background: url("https://images.unsplash.com/photo-1498750398774-8a1191e2ea2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat;
           height: 12rem;
-          width: 100%;
+          width: 75%;
           @include bgConfig;
           position: relative;
           transition: all .5s ease-out;
       }
       &__texts {
           padding: 1.5rem;
+          width: 75%;
           .title {
               font-size: 1.8rem;
               color: #57606f;
@@ -519,7 +520,161 @@ header {
           margin: .8rem 0;
           text-align: right;
           button {
-              background-color: #e1d7d2;
+              background-color: #de682c;
+              padding: .8rem;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 600;
+              font-size: 1rem;
+              color: #fff;
+              border-radius: 5px;
+              &:hover {
+                  border-radius: 5px 10px 5px 10px;
+                  background-color: #c1e567;
+              }
+          }
+      }
+      &__socials {
+          color: #747d8c;
+          .title {
+              font-size: 1.3rem;
+          }
+          i {
+              font-size: 1.4rem;
+              margin-top: .5rem;
+              cursor: pointer;
+              transition: all .5s ease-out;
+              &:hover {
+                  transform:scale(1.1);
+                  color: tomato;
+                  margin-right: .5rem;
+              }
+              &:not(:last-child) {
+                  margin-right: .2rem;
+              }
+      }
+    }
+  }
+   // card-two
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  p,
+  h1,
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  // .app-two {
+  //   background-color: rgb(151, 55, 55);
+  //   height: 100vh;
+  // }
+  
+  body {
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  button {
+      border:none;
+      transition: all .5s ease-out;
+      cursor: pointer;
+      &:hover {
+          transform: translateY(-10%);
+      }
+      &:active {
+          transform: translateY(0);
+      }
+      &:focus {
+          outline: 0;
+      }
+  }
+  
+  @mixin bgConfig {
+      background-size: cover;
+      background-position: center center;
+  }
+  
+  @mixin centerVH {
+      // position: absolute;
+      top: 50%;
+      // bottom: 50%;
+      // right:50% ;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .card-two {
+      background-color: #fff;
+      width: 23rem;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 75%;
+      height: 500px;
+      position: relative;
+      left: 70%;
+      z-index: 7;
+      // @include centerVH;
+      right: 500px;
+      &:hover .card__visual {
+          background: url("https://images.unsplash.com/photo-1498750398774-8a1191e2ea2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat;
+          @include bgConfig;
+      }
+      &__visual {
+          background: url("https://images.unsplash.com/photo-1498750398774-8a1191e2ea2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat;
+          height: 12rem;
+          width: 75%;
+          @include bgConfig;
+          position: relative;
+          transition: all .5s ease-out;
+      }
+      &__texts {
+          padding: 1.5rem;
+          width: 75%;
+          .title {
+              font-size: 1.8rem;
+              color: #57606f;
+          }
+          .subtitle {
+              margin: .5rem 0;
+              font-size: 1rem;
+              color: #747d8c;
+          }
+          .line {
+              margin: .8rem 0;
+              height: 3px;
+              background-color: tomato;
+              border-radius: 5px;
+              width: 4rem;
+          }
+          .desc {
+              text-align: justify;
+              text-indent: 1.5rem;
+              line-height: 1.8rem;
+              color: #747d8c;
+          }
+      }
+      &__likeBtn {
+          background-color: tomato;
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+          padding: .8rem;
+          border-radius: 50%;
+          color: #fff;
+          transition: all .5s ease-out;
+          cursor: pointer;
+          &:hover {
+              background-color: #ff7979;
+          }
+      }
+      &__btn {
+          margin: .8rem 0;
+          text-align: right;
+          button {
+              background-color: #de682c;
               padding: .8rem;
               font-family: "Montserrat", sans-serif;
               font-weight: 600;
